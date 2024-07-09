@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/learning-hub/static/css/main.87b789eb.css",
+    "main.js": "/learning-hub/static/js/main.1e2325a3.js",
+    "static/media/background.gif": "/learning-hub/static/media/background.797b43153ece8ce9899d.gif",
+    "static/media/loader.gif": "/learning-hub/static/media/loader.22238cff3ab4ad43bd42.gif",
+    "static/media/logo.png": "/learning-hub/static/media/logo.a7d294a806db2f2cc2a0.png",
+    "static/media/404.png": "/learning-hub/static/media/404.db977824edb1fe12afe9.png",
+    "index.html": "/learning-hub/index.html",
+    "main.87b789eb.css.map": "/learning-hub/static/css/main.87b789eb.css.map",
+    "main.1e2325a3.js.map": "/learning-hub/static/js/main.1e2325a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87b789eb.css",
+    "static/js/main.1e2325a3.js"
+  ]
+}
