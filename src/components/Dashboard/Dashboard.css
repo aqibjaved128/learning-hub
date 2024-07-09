@@ -1,0 +1,74 @@
+.maindashboard {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 7.3fr;
+  box-sizing: border-box;
+  min-height: 70vmin;
+}
+
+.maindashboard > div {
+  background-color: rgb(255, 255, 255);
+  
+}
+.maindashboard > div:first-child {
+  background-color: rgba(0, 0, 0, 0.84);
+}
+
+
+
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch {
+  width: 50px;
+  height: 25px;
+  background-color: #ddd;
+  border-radius: 15px;
+  position: relative;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.switch::before {
+  content: '';
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s;
+}
+
+.switch.on {
+  background-color: #4cd137;
+}
+
+.switch.on::before {
+  transform: translateX(25px);
+}
+
+.switch.off {
+  background-color: #ddd;
+}
+
+.label {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media screen and (max-width: 650px) {
+  .maindashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .maindashboard > div {
+    width: 100%;
+  }
+}

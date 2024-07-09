@@ -1,0 +1,268 @@
+.miniProfileContainer {
+    display: flex;
+    
+    align-items: center;
+    padding: 2vmax 2vmax ;
+    justify-content: space-between;
+    border-left: none;
+    box-sizing: border-box;
+
+}
+
+.myProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.myProfile > h1 {
+    font: 1000 30px "Roboto";
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.3vmax;
+    color: rgba(0, 0, 0, 0.806);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    padding-bottom: 1vmax;
+}
+
+.myProfile > h4 {
+    font: 1000 20px cursive;
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.3vmax;
+    color: rgba(0, 0, 0, 0.806);
+}
+
+.myProfileBtn {
+    padding-right: 23vmax;
+
+}
+.secondProfileContainer {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.secondProfileContainer > div {
+display: flex;
+box-sizing: border-box;
+}
+
+.secondProfileContainer > div:first-child {
+    width: 60%;
+
+}
+.secondProfileContainer > div:last-child {
+    width: 20%;
+}
+
+.myProfileBtn > p {
+    background-color: darkblue;
+    color: white;
+    padding: 1vmax 2vmax;
+    border-radius: 7px;
+    font: 100 14px "Roboto";
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.myProfileBtn > p:hover {
+    background-color: white;
+    color: darkblue;
+    border: 2px solid darkblue;
+}
+
+.gender > select {
+    padding: 0.5vmax 6vmax;
+    font: 200 15px "Poppins";
+    color: rgba(0, 0, 0, 0.483);
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.098);
+
+}
+.gender{
+    padding: 1vmax ;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myProfileFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .myProfileFormMini {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    text-shadow:  0 0 7px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+  }
+
+  .label {
+    text-align: left;
+  }
+
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1c40f;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    color: #f1c40f;
+    border: 2px solid #f1c40f;
+    background-color: white;
+  }
+  
+  .text-link {
+    display: block;
+    margin: 1rem 0;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.579);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    font: 300 14px "Roboto";
+  }
+  
+  .text-link:hover {
+    text-decoration: underline;
+    color: black;
+
+  }
+  
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .myProfileFormMini {
+      padding: 1.5rem;
+    }
+    .secondProfileContainer {
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .secondProfileContainer > div {
+        width: 100% !important;
+        margin: 4vmax 0vmax;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .myProfileFormMini {
+      padding: 1rem;
+    }
+  }
+  
+
+@media screen and (max-width: 650px) {
+    .myProfileBtn {
+        padding-right: 2vmax;
+    }
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-icon::before {
+    content: '📷';
+    font-size: 24px;
+  }
+  
+  .note {
+    font-size: 12px;
+    text-align: center;
+    color: #888;
+    font-family: "Roboto";
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: "Roboto";
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 15px;
+    }
+  }
+  

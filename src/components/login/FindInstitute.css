@@ -1,0 +1,105 @@
+.container {
+    min-height: 100vmin;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    padding-top: 1vmax;
+    text-transform: uppercase;
+    background-image: url("../../images/background.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container > h1 {
+    font: 1000 30px "Roboto";
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.3vmax;
+    color: rgba(0, 0, 0, 0.806);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.container > img {
+    width: 180px;
+    padding: 1vmax 0vmax;
+    filter: drop-shadow( 0 0 7px rgba(0, 0, 0, 0.7));
+}
+
+.container > h2 {
+    font: 800 25px "Roboto";
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.3vmax;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.806);
+    padding-bottom: 1vmax;
+}
+.container > div {
+    padding: 1vmax;
+    display: flex;
+    padding-bottom: 3vmax;
+}
+.container > div > select {
+    padding: 0.5vmax 1vmax;
+    font: 200 15px "Poppins";
+    color: darkblue;
+}
+
+
+
+.container > a {
+    font: 300 16px "Poppins";
+    border: 2px solid black;
+    padding: 0.5vmax 2vmax;
+
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.438);
+
+}
+
+.container > a:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        min-height: 100vmin;
+        padding-top: 25vmax;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container > h1 {
+        font-size: 25px;
+    }
+
+    .container > img {
+        width: 160px;
+        padding: 3vmax 0vmax;
+
+    }
+
+    .container > h2 {
+        font-size: 20px;
+    }
+    
+    .container > div > select {
+        padding: 0.5vmax ;
+
+    }
+
+    .container > a {
+    padding: 1vmax 4vmax;
+
+    }
+    
+    }
